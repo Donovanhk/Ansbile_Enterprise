@@ -1,6 +1,8 @@
 inventories/
 ├── production/
-│   ├── windows10.ini
+
+
+│   ├── windows10.ini 
 │   ├── windows11.ini
 │   ├── windows2019.ini
 │   ├── windows2022.ini
