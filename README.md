@@ -1,5 +1,4 @@
 inventories/
-
 ├── ansible.cfg  
 
 ├── production/
@@ -24,6 +23,11 @@ inventories/
 
 ├── roles/
 
-│   ├── windows_updates/
+└── windows_updates/
+
+    ├── tasks/
+        │   └── main.yml
+    └── vars/
+        └── main.yml
 
 │   └── software_install/
