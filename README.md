@@ -1,5 +1,6 @@
-inventories/
+''' text
 
+inventories/
 ├── ansible.cfg  
 
 ├── production/
