@@ -1,4 +1,5 @@
 inventories/
+
 ├── ansible.cfg  
 
 ├── production/
