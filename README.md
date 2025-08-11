@@ -1,20 +1,35 @@
 ```text
-inventories/
-├── ansible.cfg  
-├── production/
-│   ├── windows10.ini 
-│   ├── windows11.ini
-│   ├── windows2019.ini
-│   ├── windows2022.ini
-│   └── group_vars/
-│       ├── windows10.yml
-│       ├── windows11.yml
-│       ├── windows2019.yml
-│       └── windows2022.yml
-├── roles/
-└── windows_updates/
-    ├── tasks/
-        │   └── main.yml
-    └── vars/
-        └── main.yml
-│   └── software_install/
+ansible-enterprise/
+├── 🔸inventories/              # Convention (not auto-recognized unless configured)
+│   ├── production/
+│   │   ├── 🔸hosts             # Inventory file (INI or YAML)
+│   │   └── 🔸group_vars/       # Auto-loaded group variables
+│   │       └── windows10.yml
+│   ├── staging/
+│   │   ├── hosts
+│   │   └── group_vars/
+│   └── development/
+│       ├── hosts
+│       └── group_vars/
+│
+├── 🔸roles/                    # Auto-recognized role directory
+│   └── windows_updates/
+│       ├── 🔸tasks/            # Required for role execution
+│       │   └── main.yml
+│       ├── 🔸vars/             # Static variables
+│       │   └── main.yml
+│       ├── 🔸defaults/         # Lowest precedence variables
+│       │   └── main.yml
+│       ├── 🔸handlers/         # Notification handlers
+│       │   └── main.yml
+│       ├── 🔸templates/        # Jinja2 templates
+│       ├── 🔸files/            # Static files
+│       └── README.md
+│
+├── playbooks/                 # Convention (not auto-recognized)
+│   ├── windows.yml
+│   └── linux.yml
+│
+├── site.yml                   # Main playbook (name is conventional)
+├── 🔸ansible.cfg              # Auto-loaded config file
+└── README.md
