@@ -1,4 +1,4 @@
-''' text
+```text
 
 inventories/
 ├── ansible.cfg  
