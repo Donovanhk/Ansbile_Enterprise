@@ -1,0 +1,5 @@
+- name: Update Windows and Install Software
+  hosts: all
+  roles:
+    - windows_updates
+    - software_install
