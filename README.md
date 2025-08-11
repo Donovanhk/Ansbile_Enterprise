@@ -21,3 +21,9 @@ inventories/
 │       ├── windows2019.yml
 
 │       └── windows2022.yml
+
+├── roles/
+
+│   ├── windows_updates/
+
+│   └── software_install/
