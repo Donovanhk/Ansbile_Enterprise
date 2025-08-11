@@ -1,5 +1,7 @@
 inventories/
 
+├── ansible.cfg  
+
 ├── production/
 
 │   ├── windows10.ini 
