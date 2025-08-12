@@ -4,7 +4,7 @@ ansible-enterprise/
 │   ├── production/
 │   │   ├── 🔸hosts             # Inventory file (INI or YAML)
 │   │   └── 🔸group_vars/       # Auto-loaded group variables
-│   │       └── windows10.yml
+│   │       └── windows_all.yml
 │   ├── staging/
 │   │   ├── hosts
 │   │   └── group_vars/
@@ -32,5 +32,6 @@ ansible-enterprise/
 │
 ├── site.yml                   # Main playbook (name is conventional)
 ├── 🔸ansible.cfg              # Auto-loaded config file
+├── requirements.yml      # Optional: for role dependencies
 └── README.md
 
