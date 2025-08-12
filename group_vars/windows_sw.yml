@@ -1,7 +1,0 @@
-software_list:
-  - name: googlechrome
-    tag: chrome
-  - name: vscode
-    tag: vscode
-  - name: 7zip
-    tag: 7zip
