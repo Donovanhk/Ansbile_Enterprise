@@ -3,20 +3,28 @@
   gather_facts: no
   tasks:
 
+    - name: Install software via Chocolatey
+      win_chocolatey:
+        name: "{{ item.name }}"
+        state: present
+      loop: "{{ software_list }}"
+      tags: "{{ item.tag }}"
+      
     - name: Install Google Chrome
       win_chocolatey:
         name: googlechrome
         state: present
       tags: chrome
 
-    - name: Install Visual Studio Code
-      win_chocolatey:
-        name: vscode
-        state: present
-      tags: vscode
+#     - name: Install Visual Studio Code
+#       win_chocolatey:
+#        name: vscode
+#         state: present 
+#      tags: vscode
 
-    - name: Install 7-Zip
-      win_chocolatey:
-        name: 7zip
-        state: present
-      tags: 7zip
+#     - name: Install 7-Zip
+#       win_chocolatey:
+#         name: 7zip
+#         state: present
+#       tags: 7zip
+
