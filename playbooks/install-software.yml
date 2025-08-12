@@ -1,5 +1,5 @@
 - name: Install software on Windows machines
-  hosts: windows_all
+  hosts: windows_all    # looking for same name of "group_vars/windows_all.yml"
   gather_facts: no
   tasks:
 
