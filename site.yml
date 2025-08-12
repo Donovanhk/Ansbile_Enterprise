@@ -1,0 +1,6 @@
+- name: Windows Automation
+  hosts: windows_all
+  roles:
+    - windows_updates
+    - software_install
+    - system_config
